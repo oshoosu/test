@@ -1,0 +1,170 @@
+* {
+  margin: 0; padding: 0;box-sizing: border-box; font-family:'맑은 고딕', sans-serif;
+}
+
+body {
+  color: black;
+}
+
+a {
+  text-decoration:none;
+  color: inherit;
+}
+
+li {
+  list-style:none;
+}
+img {
+  border:none;
+}
+
+/* header - logo*/
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: bisque;
+}
+.headerContent {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.logo {
+  float: left;
+  width: 200px;
+  height: 100px;
+}
+
+.logo img{
+  display: block;
+  width: 200px;
+  height: auto;
+  padding-top: 20px;
+}
+
+/* header - gnb */
+.gnb {
+  width: 1000px;
+  height: 100px;
+  padding-right: 20px;
+  float: left;
+  position: relative;
+}
+
+.gnb a{
+  display: block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.gnb > ul{
+  float: right;
+}
+
+.gnb > ul > li {
+  float: left;
+  margin-top: 25px;
+}
+
+.gnb li:hover .mainmenu{
+  color: #fff;
+  background-color:steelblue
+}
+
+.submenu{
+  background-color: steelblue;
+  display: none;
+  position: absolute;
+  z-index: 60000;
+}
+
+.submenu a:hover {
+  color: steelblue;
+  background-color: #fff;
+}
+
+/* slideWrap */
+.slideContainer {
+  position: relative;
+  overflow: hidden;
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.slideWrap {
+  position:absolute;
+  width: 100%;
+  height: 900px;
+}
+
+.slideWrap img {
+  display: block;
+  width: 1200px;
+  height: 300px;
+}
+
+/* content */
+.content {
+  width: 1200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.content >* {
+  float: left;
+  width: 400px;
+  height: 200px;
+}
+
+.tabmenu li {
+  display: inline-block;
+}
+.tabmenu li a {
+  display: block;
+  padding: 10px;
+}
+
+.tabmenu li.on a{
+  background-color: aqua;
+}
+
+.tabitem ul.on {
+  background-color:darkseagreen;
+}
+
+.tabitem >* {
+  height: 156px;
+  padding: 10px;
+}
+
+.notice li a{
+  display: inline-block; 
+  width: 260px; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+.notice li span{margin-left: auto; float: right;}
+
+.gallery {
+  display: none;
+}
+
+/* popup */
+.popup {
+  display: none;
+  width: 300px;
+  height: 300px;
+  background-color: aliceblue;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
